@@ -11,7 +11,7 @@ var urlchunk4 = "&fileDate=";
 var urlchunk5 = "&jobId=";
 var urlchunk6 = "&priceType=C&channelCode=A";
 var fullUrl = "https://w3-117.ibm.com/software/sales/passportadvantage/pricepub/user/DownloadCSV.do?regionCode=EMEA&fileCntryName=EURO&fileType=SSA&fileFormat=CSV&fileContentType=601&controlCode=&fileNamePrefix=Eurcountries&fileDate=2016-01-13&jobId=1070&priceType=C&channelCode=A"
-var path = "C:/Users/IBM_ADMIN/Documents/Work/SSP Mobile App/";
+var path = "C:/Users/IBM_ADMIN/Documents/Work/SSP Mobile App/DLScript/";
 var fName = undefined;
 //var filePath = undefined;
 var destination = path + "Unzipped";
@@ -22,9 +22,38 @@ var tableNames = [
 {region : "EMEA",
 fileNamePrefix : "Eurcountries",
 fileCntryName : "EURO"},
+
 {fileNamePrefix : "Unitedkingdom",
 region : "EMEA",
-fileCntryName : "GBR"}
+fileCntryName : "GBR"},
+
+{fileNamePrefix : "Southafrica",
+region : "EMEA",
+fileCntryName : "ZAF"},
+
+{fileNamePrefix : "Unitedstates",
+region : "AMERICAS",
+fileCntryName : "USA"},
+
+{fileNamePrefix : "Brazil",
+region : "AMERICAS",
+fileCntryName : "BRA"},
+
+{fileNamePrefix : "Australia",
+region : "APAC",
+fileCntryName : "AUS"},
+
+{fileNamePrefix : "India",
+region : "APAC",
+fileCntryName : "IND"},
+
+{fileNamePrefix : "NewZealand",
+region : "APAC",
+fileCntryName : "NZL"},
+
+{fileNamePrefix : "Singapore",
+region : "APAC",
+fileCntryName : "SGP"}
 ];
 
 for (i = 0; i < tableNames.length; i++){
