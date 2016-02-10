@@ -7,6 +7,8 @@ DELETE FROM saas_sgd_pricing;
 DELETE FROM saas_nzd_pricing;
 DELETE FROM saas_inr_pricing;
 DELETE FROM saas_brl_pricing;
+DELETE FROM saas_dnk_pricing;
+DELETE FROM saas_swe_pricing;
 
 \copy saas_us_pricing from 'C:\Users\IBM_ADMIN\Documents\Work\SSP Mobile App\DLScript\Unzipped\AMERICASUnitedstatesUSAnew.csv' DELIMITERS ',' CSV;
 \copy saas_uk_pricing from 'C:\Users\IBM_ADMIN\Documents\Work\SSP Mobile App\DLScript\Unzipped\EMEAUnitedkingdomGBRnew.csv' DELIMITERS ',' CSV;
@@ -17,3 +19,5 @@ DELETE FROM saas_brl_pricing;
 \copy saas_nzd_pricing from 'C:\Users\IBM_ADMIN\Documents\Work\SSP Mobile App\DLScript\Unzipped\APACNewZealandNZLnew.csv' DELIMITERS ',' CSV;
 \copy saas_inr_pricing from 'C:\Users\IBM_ADMIN\Documents\Work\SSP Mobile App\DLScript\Unzipped\APACIndiaINDnew.csv' DELIMITERS ',' CSV;
 \copy saas_brl_pricing from 'C:\Users\IBM_ADMIN\Documents\Work\SSP Mobile App\DLScript\Unzipped\AMERICASBrazilBRAnew.csv' DELIMITERS ',' CSV;
+\copy saas_dnk_pricing from 'C:\Users\IBM_ADMIN\Documents\Work\SSP Mobile App\DLScript\Unzipped\EMEADenmarkDNKnew.csv' DELIMITERS ',' CSV;
+\copy saas_swe_pricing from 'C:\Users\IBM_ADMIN\Documents\Work\SSP Mobile App\DLScript\Unzipped\EMEASwedenSWEnew.csv' DELIMITERS ',' CSV;

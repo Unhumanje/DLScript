@@ -16,7 +16,7 @@ var fName = undefined;
 //var filePath = undefined;
 var destination = path + "Unzipped";
 var urlC = undefined;
-var date = "2016-01-13";		// must be updated to current date whenever run.
+var date = "2016-02-10";		// must be updated to current date whenever run.
 var jobid = "1070"  // must be updated to current date whenever run. 
 var tableNames = [
 {region : "EMEA",
@@ -53,7 +53,15 @@ fileCntryName : "NZL"},
 
 {fileNamePrefix : "Singapore",
 region : "APAC",
-fileCntryName : "SGP"}
+fileCntryName : "SGP"},
+
+{fileNamePrefix : "Denmark",
+region : "EMEA",
+fileCntryName : "DNK"},
+
+{fileNamePrefix : "Sweden",
+region : "EMEA",
+fileCntryName : "SWE"}
 ];
 
 for (i = 0; i < tableNames.length; i++){
