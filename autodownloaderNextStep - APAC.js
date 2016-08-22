@@ -16,28 +16,9 @@ var fName = undefined;
 //var filePath = undefined;
 var destination = path + "Unzipped";
 var urlC = undefined;
-var date = "2016-02-10";		// must be updated to current date whenever run.
-var jobid = "1070"  // must be updated to current date whenever run. 
+var date = "2016-08-18";		// must be updated to current date whenever run.
+var jobid = "1131"  // must be updated to current date whenever run. 
 var tableNames = [
-{region : "EMEA",
-fileNamePrefix : "Eurcountries",
-fileCntryName : "EURO"},
-
-{fileNamePrefix : "Unitedkingdom",
-region : "EMEA",
-fileCntryName : "GBR"},
-
-{fileNamePrefix : "Southafrica",
-region : "EMEA",
-fileCntryName : "ZAF"},
-
-{fileNamePrefix : "Unitedstates",
-region : "AMERICAS",
-fileCntryName : "USA"},
-
-{fileNamePrefix : "Brazil",
-region : "AMERICAS",
-fileCntryName : "BRA"},
 
 {fileNamePrefix : "Australia",
 region : "APAC",
@@ -53,16 +34,11 @@ fileCntryName : "NZL"},
 
 {fileNamePrefix : "Singapore",
 region : "APAC",
-fileCntryName : "SGP"},
+fileCntryName : "SGP"}
 
-{fileNamePrefix : "Denmark",
-region : "EMEA",
-fileCntryName : "DNK"},
-
-{fileNamePrefix : "Sweden",
-region : "EMEA",
-fileCntryName : "SWE"}
 ];
+
+
 
 for (i = 0; i < tableNames.length; i++){
 	// build strings for urls and file names
@@ -102,6 +78,7 @@ function nextFunction(fName){
 
 function downloadWithGet(fName, webAddress){
 //	downloads from a url using a get request
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 	https.get(webAddress, function(response){
 		var file = fs.createWriteStream(fName);
 
